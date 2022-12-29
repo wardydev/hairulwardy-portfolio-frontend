@@ -15,10 +15,11 @@ const DetailBlog = () => {
     `*[_type == 'blog' && _id == "${state?.postId}"][0]`,
     state?.postId
   );
-  // const posts = useSanityQuery(`*[_type == "blog"]`);
+
   const isDataAvailable = () => {
     return data?.length !== 0;
   };
+
   return (
     <Layout>
       {isLoading ? (
@@ -35,10 +36,7 @@ const DetailBlog = () => {
               {isDataAvailable() && data.title}
             </h1>
             <div className="text-xl mt-2 mb-8 flex gap-3 opacity-75">
-              <span>#react</span>
-              <span>#react</span>
-              <span>#react</span>
-              <span>#react</span>
+              {/* <span>test</span> */}
             </div>
             <img
               src={data.length !== 0 && urlFor(data?.thumbnail).url()}

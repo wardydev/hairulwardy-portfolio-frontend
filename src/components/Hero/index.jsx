@@ -33,9 +33,9 @@ const Hero = () => {
           );
         })}
       <a href="./Resume-Hairul-Wardi.pdf" download={true}>
-        <div className="bg-cyan-500 py-4 lg:px-6 w-full lg:w-2/5 mx-auto hover:bg-cyan-600 text-white hover:text-gray-200 font-semibold ">
+        <span className="bg-cyan-500 py-4 lg:px-6 w-full lg:w-2/5 mx-auto hover:bg-cyan-600 text-white hover:text-gray-200 font-semibold ">
           Download My Resume Here📄
-        </div>
+        </span>
       </a>
     </div>
   );
